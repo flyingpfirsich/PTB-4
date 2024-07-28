@@ -1,19 +1,88 @@
 \chapter{Grundlagen}
-    \section{Geschäftsprozessautomatisierung}
     \section{Geschäftsprozessmanagement}
-    \section{Integration}
+   - BPM includes concepts, meth-
+ods, and techniques to support the design, administration, conﬁguration, enact-
+ment, and analysis of business processes
+- Definition
+- Aufgaben
+- Bereiche
+- Nutzung in der Industrie
+- Stärken
+- Schwächen
+- Auf BPMN2.0 eingehen
+- BPMNS als Softwarelösung für BPM
+\subsection{BPM Lifecycle}
+    \section{Robotic Process Automation}
+- Definition
+- RPA is an umbrella term for tools that operate on
+the user interface of other computer systems in the way a human would do” [1].
+RPA is an upcoming
+- Use Cases
+- Harmon [20] indicated that 30% of the surveyed practitioners 
+would like to add some kind of RPA capabilities to their process modeling suite. 
+-Probleme von RPA:
+Despite all beneﬁts, RPA has strong limitations: In order to identify and imple-
+ment an RPA process, extensive process knowledge is required. Existing work
+has shown that, if no such knowledge is available (e.g. no other systems for
+gathering it are in place), the beneﬁts of RPA are far less signiﬁcant, as much
+time and eﬀort has to be put into gaining that knowledge [5, 6]
+- - fehlende Infos über automation enactment(was soll automatisiert werden?)
+- Ausnahmebehandlungen
+- Automatisierung in die Organisation einbetten
+
+    \section{BPMNS-RPA}
+- Vorschlag, beide Technologien zu verbinden
+- beide Technolgien haben Gemeinsamkeiten, beide bauen auf Prozesse auf, haben die gleichen Ziele
+- sind im Moment jedoch völlig getrennt: Though these technologies are very often used separately, the authors from business practice [14, 36] strongly suggest combining both to gain even more business value. In a case of the lack of resources and/or time to completely implement BPMS, RPA can
+4 be a valuable and relatively inexpensive tool to solve or complement some of the un-fulfilled goals.
+- BPM kann Rahmen schaffen, damit RPA schneller skalieren kann
+- BPMN Notation könnte Brücke bilden
+- somit ist: As RPA systems can only automate processes on a low level
+of abstraction, RPA processes can be considered activities of a parent business
+process.
+- kann Probleme von RPA lösen
+BPMNS-RPA kann eine Mögllichkeit sein.
+\subsection{BPMN-RPA Lifecycle}
 \chapter{Marktübersicht}
-\chapter{Integration bei SAP Signavio}
-    \section{Use Cases}
-    \section{Bestehende Integrationen}
+- Reihe von Anbietern auf RPA und BPMN Seite,
+- es wird untersucht, in wie fern die Anbieter Methoden beider Disziplinen vereinen.
+- untersucht werden folgende:
 \chapter{Fallstudie: BPMN Datenaustausch zwischen SAP Build Process Automation und SAP Signavio}
 
     - Überleitung zum Hauptteil der Studienarbeit
+\section{SAP Signavio}
+\section{SAP Build Process Automation}
+
+\section{Problem Statement}
+    - hier auf die angeführten Probleme aus Kapitel 1 eingehen
+    - Personas vorstellen
+    - User Demand angeben
 
 
-    \section{Mehrwert}
+   \section{Integration}
+   - die stärkere kollaboration zwischen Signavio Process Manager und SBPA kann als Schritt in Richtung BPMS-RPA verstanden werden
+   - damit besteht die Mögllichkeit für SAP, auf dem Gebiet vorreiter zu werden
+   - Sie kann die in Kapitel 1 beschriebenen Probleme lösen
+   - einen einheitlichen ende-zu-ende Prozess darstellen und rpa skalierbar machen
+   - ein erster Versuch ist folgendes Feature:
+   - es wird überprüft, in wie fern ein automatischer BPMN Datenaustausch zwischen Signavio und SBPA zu realisieren ist.
+   - als MVP wird der manuelle BPMN import gesetzt
+   - Nach Evaluation des MVPs sind weitere tiefergreifende Integrationen vorstellbar
+
+   - hier auf den POC eingehen
+    .Es wird eine Integration evaluiert, um signavio und sbpa stärker zu integrieren
+\subsection{Technische Voraussetzung}
+- sbpa hat eine workflow engine, die bpmn2.0 compliant ist, basiert auf xxx engine
+- jedoch werden in der design time der Anwendung nicht alle shapes unterstützt.
+-hier tabelle mit shapes einfügen
+
+   - welche optionen werden evaluiert?
+    - eine iflow Integration
+    - einen bpmn Import
+    - eine native Integration
+    - auf den lifecycle eingehen
+    - ea story erzählen
     
-    \section{As-Is Analyse}
     \section{To-Be Modellierung}
     - User Journey?
     - man identifiziert einen manuellen Prozess in Signavio
@@ -24,6 +93,8 @@
     - Prozess testen
     - man hat einen manuellen Prozess automatisiert, ohne ihn doppelt zu modellieren
     - UI Mockups einbinden
+    \section[short]{SAP Enterprise Automation}
+    - EA als RPA-BPMNS bestreben von SAP
 \chapter{Ausblick}
     \section{Bewertung}
     - manueller Import immer noch zu aufwendig
@@ -32,5 +103,3 @@
         - darum ist keine Synchronisation möglich
     \section{Weiterentwicklung}
     \section{Weitere Integrationsszenarien}
-
-
