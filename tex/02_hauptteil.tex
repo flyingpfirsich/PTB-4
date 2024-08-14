@@ -1,43 +1,37 @@
 \chapter{Grundlagen}
     \section{Business Process Management}
-    Business Process Management (BPM) ist ein systematischer Ansatz, der das Entwerfen, Verwalten, Analysieren und Verbessern von Geschäftsprozessen beschreibt. \citet{Weske2019} definiert \gls{bpm} folgendermaßen: \say{BPM umfasst Konzepte, Methoden und Techniken zur Unterstützung der Gestaltung, Verwaltung, Konfiguration, Durchführung und Analyse von Geschäftsprozessen.} \gls{bpm} gilt als reifes Forschungsgebiet, das sowohl in der Theorie, als auch in der Praxis erprobt wurde \citep{König2020RPA-BPMS}. \gls{bpm} adressiert eine Reihe an Probleme, mit denen Unternehmen konfrontiert sind. Täglich fallen eine enorme Anzahl an Geschäftsprozessen an, die häufig nicht dokumentiert oder standardisiert sind, was zu Inkonsistenzen und Fehlanpassungen führt \citep{Dumas2018}. Das Wissen über diese Prozesse ist oft auf verschiedene, uneinheitliche Dokumente verteilt, was die Nachvollziehbarkeit erheblich erschwert. Ohne eine konsolidierte Dokumentation und klare Prozessstandards ist es schwierig, Prozesse zu messen, was zu langsameren und suboptimalen Abläufen führt. Zudem wird die Einhaltung regulatorischer Vorschriften problematisch, wenn der Überblick über die Prozesse fehlt, da regulatorische Anforderungen oft spezifische Prozessdokumentationen erfordern. Die Einführung neuer Prozesse wird ebenfalls erschwert, wenn bestehende Prozesse nicht mit den Unternehmenszielen abgestimmt sind. Unternehmen, die BPM nicht nutzen, kämpfen oft mit höheren Betriebskosten, verminderter Agilität und einem Wettbewerbsnachteil, da sie nicht in der Lage sind, effizient und flexibel auf Veränderungen im Markt zu reagieren \citep{BEEREPOOT2023103837}. BPM bietet hier eine strukturierte Lösung, indem es Transparenz schafft, Prozesse standardisiert und messbar macht und damit die  Wettbewerbsfähigkeit eines Unternehmens gewährleistet. Zentrale Rolle spielt hierbei \gls{bpmn} als Standardnotation, die es ermöglicht, Geschäftsprozesse klar und verständlich zu modellieren, zu teilen und zu simulieren und somit die Kommunikation zwischen Stakeholdern verbessert \citep{Dumas2018}. Einzug findet \gls{bpm} über \gls{bpms}, welche als Technologieprodukt folgende Funktionalitäten umfasst:
-    \begin{itemize} 
-        
-        \item \textbf{Process Mining Tools: } analysieren angefallene Prozesse basierend auf Log-Dateien aus den IT-Systemen. Auf Basis der historischen Prozessdaten werden Visualisierungen, Abweichungen, Engpässe und Verbesserungspotenziale identifiziert. So bieten Process Mining Tools eine datengestützte Grundlage zur Prozessoptimierung \citep{vanderAalst2016}.
+        Business Process Management (BPM) ist ein systematischer Ansatz, der das Entwerfen, Verwalten, Analysieren und Verbessern von Geschäftsprozessen beschreibt. \citet{Weske2019} definiert \gls{bpm} folgendermaßen: \say{BPM umfasst Konzepte, Methoden und Techniken zur Unterstützung der Gestaltung, Verwaltung, Konfiguration, Durchführung und Analyse von Geschäftsprozessen.} \gls{bpm} gilt als reifes Forschungsgebiet, das sowohl in der Theorie, als auch in der Praxis erprobt wurde \citep{König2020RPA-BPMS}. \gls{bpm} adressiert eine Reihe an Probleme, mit denen Unternehmen konfrontiert sind. Täglich fallen eine enorme Anzahl an Geschäftsprozessen an, die häufig nicht dokumentiert oder standardisiert sind, was zu Inkonsistenzen und Fehlanpassungen führt \citep{Dumas2018}. Das Wissen über diese Prozesse ist oft auf verschiedene, uneinheitliche Dokumente verteilt, was die Nachvollziehbarkeit erheblich erschwert. Ohne eine konsolidierte Dokumentation und klare Prozessstandards ist es schwierig, Prozesse zu messen, was zu langsameren und suboptimalen Abläufen führt. Zudem wird die Einhaltung regulatorischer Vorschriften problematisch, wenn der Überblick über die Prozesse fehlt, da regulatorische Anforderungen oft spezifische Prozessdokumentationen erfordern. Die Einführung neuer Prozesse wird ebenfalls erschwert, wenn bestehende Prozesse nicht mit den Unternehmenszielen abgestimmt sind. Unternehmen, die BPM nicht nutzen, kämpfen oft mit höheren Betriebskosten, verminderter Agilität und einem Wettbewerbsnachteil, da sie nicht in der Lage sind, effizient und flexibel auf Veränderungen im Markt zu reagieren \citep{BEEREPOOT2023103837}. BPM bietet hier eine strukturierte Lösung, indem es Transparenz schafft, Prozesse standardisiert und messbar macht und damit die  Wettbewerbsfähigkeit eines Unternehmens gewährleistet. Zentrale Rolle spielt hierbei \gls{bpmn} als Standardnotation, die es ermöglicht, Geschäftsprozesse klar und verständlich zu modellieren, zu teilen und zu simulieren und somit die Kommunikation zwischen Stakeholdern verbessert \citep{Dumas2018}. Einzug findet \gls{bpm} über \gls{bpms}, welche als Technologieprodukt folgende Funktionalitäten umfasst:
+        \begin{itemize} 
+            
+            \item \textbf{Process Mining Tools: } analysieren angefallene Prozesse basierend auf Log-Dateien aus den IT-Systemen. Auf Basis der historischen Prozessdaten werden Visualisierungen, Abweichungen, Engpässe und Verbesserungspotenziale identifiziert. So bieten Process Mining Tools eine datengestützte Grundlage zur Prozessoptimierung \citep{vanderAalst2016}.
 
-        \item \textbf{Business Process Modelling Notation (BPMN): } \gls{bpm} ist eine auf dem XML-Dateiformat basierende grafische Notation für die Modellierung von Geschäftsprozessen. So kann sie Geschäftsprozesse verständlich für sowohl technische als auch für betriebliche Stakeholder machen, was Transparenz und Alignment innerhalb des Unternehmens stärkt \citep{bpmn2024}.
-        
-        \item \textbf{Workflow-Engines: } Workflow-Engines führen die Prozessabläufe, respektive die modellierten BPMN-Modelle aus. So werden die Prozessabläufe basierend auf den definierten Regeln des BPMN-Modells automatisiert. Dadurch werden manuelle Eingriffe reduziert und Effizienzsteigerungen erwirkt \citep{camunda2024}.
-        
-        \item \textbf{Business Rules Engines (BRE): } \gls{bre} ist eine Softwarekomponente, die Geschäftsregeln unabhängig der Prozesse verwaltet. Da Geschäftslogik und Prozesslogik getrennt sind, können Änderungen vorgenommen werden, ohne Prozesse neu zu modellieren \citep{swoox2024}.
-        
-        \item \textbf{Simulations- und Test-Tools: } Simulations- und Test-Tools ermöglichen es, Geschäftsprozesse vor ihrer Implementierung zu simulieren. Dadurch können Probleme frühzeitig erkannt und sichergestellt werden, dass Prozesse unter verschiedenen Szenarien funktionieren \citep{visualparadigm2024}.
-        
-        \end{itemize}
-    an Problemen, denen sich Unternehmen konfrontiert sehen: 
-    -es fallen extrem viele prozesse jeden tag an
-    - oft sind diese Prozesse nicht dokumentiert und standardisiert
-    - das führt zu inkonsistenzen und misaglinment
-    - das wissen um prozesse ist verteilt über das gesamte Unternehmen in uneinheitlichen dokumenten
-    - das macht es schwierig, prozesse nachzuvollziehen
-    - man kann prozesse nicht messen, das führt zu langsamen und suboptimalen Prozessen
-    - es ist schwierig, sich an regulatorische Vorschriften zu halten, wenn man keinen überblick über die Prozesse hat
-    - man kann keine neuen Prozesse einführen, die Prozesse sind nicht auf die Unternehmensziele abgestimmt
-    - Unternehmen, die kein bpm einsetzen haben generell höhere Betriebskosten, geringere Agilität, und einen Wettbewerbsnachteil
+            \item \textbf{Business Process Modelling Notation (BPMN): } \gls{bpm} ist eine auf dem XML-Dateiformat basierende grafische Notation für die Modellierung von Geschäftsprozessen. So kann sie Geschäftsprozesse verständlich für sowohl technische als auch für betriebliche Stakeholder machen, was Transparenz und Alignment innerhalb des Unternehmens stärkt \citep{bpmn2024}.
+            
+            \item \textbf{Workflow-Engines: } Workflow-Engines führen die Prozessabläufe, respektive die modellierten BPMN-Modelle aus. So werden die Prozessabläufe basierend auf den definierten Regeln des BPMN-Modells automatisiert. Dadurch werden manuelle Eingriffe reduziert und Effizienzsteigerungen erwirkt \citep{camunda2024}.
+            
+            \item \textbf{Business Rules Engines (BRE): } \gls{bre} ist eine Softwarekomponente, die Geschäftsregeln unabhängig der Prozesse verwaltet. Da Geschäftslogik und Prozesslogik getrennt sind, können Änderungen vorgenommen werden, ohne Prozesse neu zu modellieren \citep{swoox2024}.
+            
+            \item \textbf{Simulations- und Test-Tools: } Simulations- und Test-Tools ermöglichen es, Geschäftsprozesse vor ihrer Implementierung zu simulieren. Dadurch können Probleme frühzeitig erkannt und sichergestellt werden, dass Prozesse unter verschiedenen Szenarien funktionieren \citep{visualparadigm2024}.
+            
+            \end{itemize}
+        Somit lässt sich sagen, dass \gls{bpm} mit \gls{bpms} eine integrale Rolle in Unternehmen spielt, um Alignment zwischen betrieblichen und technischen Stakeholdern, sowie zwischen  IT-Strategie und Unternehmens-Strategie zu ermöglichen.
 
-   - BPM includes concepts, meth-
-ods, and techniques to support the design, administration, conﬁguration, enact-
-ment, and analysis of business processes
-- Definition
-- Aufgaben
-- Bereiche
-- Nutzung in der Industrie
-- Stärken
-- Schwächen
-- Auf BPMN2.0 eingehen
-- BPMNS als Softwarelösung für BPM
-\subsection{BPM Lifecycle}
+    \subsection{BPM Lifecycle}
+        Um \gls{bpm} Projekte erfolgreich durchzuführen, schlägt \citet{Weske2019} einen BPM-Lebenszyklus vor. 
+
+        \begin{figure}[H]
+            \includegraphics[width=\textwidth]{../assets/images/BPM-Lebenszyklus.drawio.png}
+            \caption{BPM-Lebenszyklus nach \citet{Weske2019}.}
+            \end{figure}
+    
+        Der Einstieg in den Zyklus ist die \textbf{Entwurfs- und Analysephase}, in der die Geschäftsprozesse identiﬁziert und in eine \gls{bpm} Repräsentation übersetzt wird. Die neu erstellten Modelle werden veriﬁziert und gegen aktuelle Prozessanforderungen validiert. In der \textbf{Konﬁgurationsphase} werden die zu verwendenden Systeme ausgewählt und die zuvor identifizierten Geschäftsprozesse implementiert, getestet und in Betrieb genommen. In der \textbf{Umsetzungsphase} werden die Prozesse betrieben, und die Prozessausführung wird überwacht und gepflegt. Die entstehenden Log-Dateien werden wiederum in der \textbf{Evaluationsphase} durch Processmining ausgewertet. Auf Grundlage der Ergebnisse wird eine neue Iteration begonnen.
+    
     \section{Robotic Process Automation}
+    \gls{rpa} beschreibt Softwareroboter, welche auf der Benutzeroberfläche auf der gleichen Weise wie ein Mensch operiereren. \citet{vanderAalst2018} beschreibt \gls{rpa} als \say{[...] ein Oberbegriff für Werkzeuge, die auf der Benutzeroberfläche anderer Computersysteme in der Art und Weise bedienen, wie es ein Mensch tun würde}
+
+
+
+
 - Definition
 - RPA is an umbrella term for tools that operate on
 the user interface of other computer systems in the way a human would do” [1].
