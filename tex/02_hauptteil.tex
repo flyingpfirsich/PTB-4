@@ -1,5 +1,30 @@
 \chapter{Grundlagen}
-    \section{Geschäftsprozessmanagement}
+    \section{Business Process Management}
+    Business Process Management (BPM) ist ein systematischer Ansatz, der das Entwerfen, Verwalten, Analysieren und Verbessern von Geschäftsprozessen beschreibt. \citet{Weske2019} definiert \gls{bpm} folgendermaßen: \say{BPM umfasst Konzepte, Methoden und Techniken zur Unterstützung der Gestaltung, Verwaltung, Konfiguration, Durchführung und Analyse von Geschäftsprozessen.} \gls{bpm} gilt als reifes Forschungsgebiet, das sowohl in der Theorie, als auch in der Praxis erprobt wurde \citep{König2020RPA-BPMS}. \gls{bpm} adressiert eine Reihe an Probleme, mit denen Unternehmen konfrontiert sind. Täglich fallen eine enorme Anzahl an Geschäftsprozessen an, die häufig nicht dokumentiert oder standardisiert sind, was zu Inkonsistenzen und Fehlanpassungen führt \citep{Dumas2018}. Das Wissen über diese Prozesse ist oft auf verschiedene, uneinheitliche Dokumente verteilt, was die Nachvollziehbarkeit erheblich erschwert. Ohne eine konsolidierte Dokumentation und klare Prozessstandards ist es schwierig, Prozesse zu messen, was zu langsameren und suboptimalen Abläufen führt. Zudem wird die Einhaltung regulatorischer Vorschriften problematisch, wenn der Überblick über die Prozesse fehlt, da regulatorische Anforderungen oft spezifische Prozessdokumentationen erfordern. Die Einführung neuer Prozesse wird ebenfalls erschwert, wenn bestehende Prozesse nicht mit den Unternehmenszielen abgestimmt sind. Unternehmen, die BPM nicht nutzen, kämpfen oft mit höheren Betriebskosten, verminderter Agilität und einem Wettbewerbsnachteil, da sie nicht in der Lage sind, effizient und flexibel auf Veränderungen im Markt zu reagieren \citep{BEEREPOOT2023103837}. BPM bietet hier eine strukturierte Lösung, indem es Transparenz schafft, Prozesse standardisiert und messbar macht und damit die  Wettbewerbsfähigkeit eines Unternehmens gewährleistet. Zentrale Rolle spielt hierbei \gls{bpmn} als Standardnotation, die es ermöglicht, Geschäftsprozesse klar und verständlich zu modellieren, zu teilen und zu simulieren und somit die Kommunikation zwischen Stakeholdern verbessert \citep{Dumas2018}. Einzug findet \gls{bpm} über \gls{bpms}, welche als Technologieprodukt folgende Funktionalitäten umfasst:
+    \begin{itemize} 
+        
+        \item \textbf{Process Mining Tools: } analysieren angefallene Prozesse basierend auf Log-Dateien aus den IT-Systemen. Auf Basis der historischen Prozessdaten werden Visualisierungen, Abweichungen, Engpässe und Verbesserungspotenziale identifiziert. So bieten Process Mining Tools eine datengestützte Grundlage zur Prozessoptimierung \citep{vanderAalst2016}.
+
+        \item \textbf{Business Process Modelling Notation (BPMN): } \gls{bpm} ist eine auf dem XML-Dateiformat basierende grafische Notation für die Modellierung von Geschäftsprozessen. So kann sie Geschäftsprozesse verständlich für sowohl technische als auch für betriebliche Stakeholder machen, was Transparenz und Alignment innerhalb des Unternehmens stärkt \citep{bpmn2024}.
+        
+        \item \textbf{Workflow-Engines: } Workflow-Engines führen die Prozessabläufe, respektive die modellierten BPMN-Modelle aus. So werden die Prozessabläufe basierend auf den definierten Regeln des BPMN-Modells automatisiert. Dadurch werden manuelle Eingriffe reduziert und Effizienzsteigerungen erwirkt \citep{camunda2024}.
+        
+        \item \textbf{Business Rules Engines (BRE): } \gls{bre} ist eine Softwarekomponente, die Geschäftsregeln unabhängig der Prozesse verwaltet. Da Geschäftslogik und Prozesslogik getrennt sind, können Änderungen vorgenommen werden, ohne Prozesse neu zu modellieren \citep{swoox2024}.
+        
+        \item \textbf{Simulations- und Test-Tools: } Simulations- und Test-Tools ermöglichen es, Geschäftsprozesse vor ihrer Implementierung zu simulieren. Dadurch können Probleme frühzeitig erkannt und sichergestellt werden, dass Prozesse unter verschiedenen Szenarien funktionieren \citep{visualparadigm2024}.
+        
+        \end{itemize}
+    an Problemen, denen sich Unternehmen konfrontiert sehen: 
+    -es fallen extrem viele prozesse jeden tag an
+    - oft sind diese Prozesse nicht dokumentiert und standardisiert
+    - das führt zu inkonsistenzen und misaglinment
+    - das wissen um prozesse ist verteilt über das gesamte Unternehmen in uneinheitlichen dokumenten
+    - das macht es schwierig, prozesse nachzuvollziehen
+    - man kann prozesse nicht messen, das führt zu langsamen und suboptimalen Prozessen
+    - es ist schwierig, sich an regulatorische Vorschriften zu halten, wenn man keinen überblick über die Prozesse hat
+    - man kann keine neuen Prozesse einführen, die Prozesse sind nicht auf die Unternehmensziele abgestimmt
+    - Unternehmen, die kein bpm einsetzen haben generell höhere Betriebskosten, geringere Agilität, und einen Wettbewerbsnachteil
+
    - BPM includes concepts, meth-
 ods, and techniques to support the design, administration, conﬁguration, enact-
 ment, and analysis of business processes
@@ -44,6 +69,16 @@ process.
 BPMNS-RPA kann eine Mögllichkeit sein.
 \subsection{BPMN-RPA Lifecycle}
 \chapter{Marktübersicht}
+\begin{comment}
+BPM market analysis
+The BPM market was valued at $16 billion in 2023. Additionally, the market is projected to exceed $58 billion by the end of 2036, exhibiting 11 percent CAGR during the forecasted period. Some of the growth propelling factors for the market are:
+
+A surge in focus on digitization of business processes.
+The rapid adoption of BPM solutions for streamlining operations.
+Increase in the adoption of cloud solutions.
+The quest to raise the productivity of the business.
+Furthermore, the market in the North America region is projected to reach almost 32 percent by the year 2036. The growth of the market can be attributed to the high penetration of advanced technologies among businesses. The presence of market leaders in the region is contributing to the significant development of various process modeling platforms. 
+\end{comment}
 - Reihe von Anbietern auf RPA und BPMN Seite,
 - es wird untersucht, in wie fern die Anbieter Methoden beider Disziplinen vereinen.
 - untersucht werden folgende:
