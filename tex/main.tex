@@ -111,7 +111,6 @@
   {€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
   {»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1
 }
-
 \usepackage{moreverb}
 \usepackage{color}
 
@@ -129,6 +128,8 @@
 \counterwithout{figure}{chapter}
 \counterwithout{table}{chapter}
 \usepackage[acronym]{glossaries}
+\input{glossar.tex}
+\makenoidxglossaries
 % \usepackage{mathptmx} % times new roman font schriftart
  
 
@@ -235,8 +236,7 @@
 \addbibresource{../assets/literature/sources.bib}
 
 
-\glstoctrue
-%\makenoidxglossaries
+
 
 
 
@@ -269,13 +269,12 @@
 %\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
 
 \clearpage
-
 \deftranslation[to=German]{Acronyms}{Abkürzungsverzeichnis}
 \deftranslation[to=German]{Glossary}{Glossar}
 \deftranslation[to=German]{Appendix}{Anhang}
-%\printnoidxglossaries{}
-
+\printnoidxglossaries
 \clearpage
+
 
 %%%%Abbildungsverzeichnis(If needed)
 
@@ -319,5 +318,4 @@
 
 %Ehrenwörtlich erklährung 
 \input{./05_ehrenwoertlicheerklaerung.tex}
-
 \end{document}
