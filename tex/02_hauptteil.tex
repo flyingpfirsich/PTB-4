@@ -26,30 +26,16 @@
     
         Der Einstieg in den Zyklus ist die \textbf{Entwurfs- und Analysephase}, in der die Geschäftsprozesse identiﬁziert und in eine \gls{bpm} Repräsentation übersetzt wird. Die neu erstellten Modelle werden veriﬁziert und gegen aktuelle Prozessanforderungen validiert. In der \textbf{Konﬁgurationsphase} werden die zu verwendenden Systeme ausgewählt und die zuvor identifizierten Geschäftsprozesse implementiert, getestet und in Betrieb genommen. In der \textbf{Umsetzungsphase} werden die Prozesse betrieben, und die Prozessausführung wird überwacht und gepflegt. Die entstehenden Log-Dateien werden wiederum in der \textbf{Evaluationsphase} durch Processmining ausgewertet. Auf Grundlage der Ergebnisse wird eine neue Iteration begonnen.
     
-    \section{Robotic Process Automation}
-    \gls{rpa} beschreibt Softwareroboter, welche auf der Benutzeroberfläche auf der gleichen Weise wie ein Mensch operiereren. \citet{vanderAalst2018} beschreibt \gls{rpa} als \say{[...] ein Oberbegriff für Werkzeuge, die auf der Benutzeroberfläche anderer Computersysteme in der Art und Weise bedienen, wie es ein Mensch tun würde}
+    \section{Robotic Process Automation} \label{rpa}
+    \gls{rpa} beschreibt Softwareroboter, welche auf der Benutzeroberfläche auf der gleichen Weise wie ein Mensch operiereren. \citet{vanderAalst2018} beschreibt \gls{rpa} als \say{[...] ein Oberbegriff für Werkzeuge, die auf der Benutzeroberfläche anderer Computersysteme in der Art und Weise bedienen, wie es ein Mensch tun würde}. Dabei können die Softwareroboter ohne umfangreiche Programmierkenntnisse als low-code Lösung implementiert werden, sodass diese schnell von Fachabteilungen ohne tiefergreifenden IT-Kenntnisse umgesetzt werden können, um Legacy-Systeme zu automatisieren. Im Gegensatz zu traditioneller Prozessautomatisierung kann \gls{rpa} Prozesse automatisieren, die keine API anbieten. Außerdem bietet es den Vorteil gegenüber manuellen Prozessen kostengünstiger, schneller und fehlerfreier Prozesse durchzuführen, sodass sich ein gesteigerter Return-On-Investment (ROI) ergibt \citep{Kroll2017}. Es haben sich jedoch auch eine Reihe von Problemen mit \gls{rpa} gezeigt: Um RPA-Prozess zu identifizieren und zu implementieren, ist umfangreiches Prozesswissen erforderlich. Ist dieses Wissen nicht vorhanden - da es beispielsweise an Systemen zum Erfassen dieses Wissens mangelt - werden die Vorteile von \gls{rpa} enorm geschmälert \citep[S.4f]{König2020RPA-BPMS}. Zudem können die eingesetzten Softwareroboter sehr fragil sein, da sie auf der Benutzeroberfläche operieren. Sobald sich Benutzeroberflächen ändern, scheitern diese. Dies schließt \gls{rpa} generell für kritische Geschäftsprozesse aus. Bei großflächig eingesetzten Softwarerobotern bedeutet das eine zeitintensive und kostspielige Wartungsarbeit \citep{Ruha2023}. Aufgrund des verstreuten Prozesswissens mangelt es oft auch an Information, welche Prozesse überhaupt geeignet sind, automatisiert zu werden \citep{Greene2019}. Der Scope von \gls{rpa} ist generell wesentlich enger zu fassen; es werden viel eher einzelne Prozessschritte eines komplexen Geschäftsprozess automatisiert, als die End-to-End Prozesse selbst \citep{Signavio2019}. \citet[S. 3]{König2020RPA-BPMS} schreibt hierzu: \say{Da RPA-Systeme nur Prozesse auf einer niedrigen 
+    Abstraktionsebene automatisieren können, können RPA-Prozesse als Aktivitäten eines übergeordneten Geschäftsprozesses betrachtet werden.}
+
+    \section{BPMS-RPA}
+    Um die in \ref{rpa} beschriebenen Probleme zu lösen, gibt es aus der Forschung Vorschläge, Funktionalitäten von \gls{rpa} tiefer mit \gls{bpms} zu integrieren \citep{Flechsig2019}. Ein ähnliches Konzept lässt sich bei citet{Kirchmer2019} mit ihrem \say{value-driven robotic process automation} Ansatz finden, der einen ganzheitlichen Blick auf unternehmensweite Automatisierung wirft. Auch Gartner sieht im Konzept der Hyperautomation - eine Erweiterung von \gls{rpa} durch KI- und Integrationslösungen - den Bedarf an BPM-Lösungen, um Prozesse effinzienter und End-to-End automatisieren zu können \citep{Gartner2024}. Mögliche Vorteile einer BPMS-RPA Integration könnten einheitliches Prozesswissen, verbesserte Prozessoptimierung, robustere Fehlerbehandlung und Skalierbarkeit von Prozessautomatisierungen darstellen \citep[S. 2]{Flechsig2022Umfrage}. Auch wenn noch nicht weit verbreitet unter RPA-Lösungen, kann \gls{bpm} als Standardnotation das Bindeglied zwischen dem Management von Geschäftsprozessen und der Automatisierung selbiger darstellen \citep{Völker2021}. Unternehmen haben erkannt, dass die zunehmende Anzahl an Softwarerobotern eine standardisierte Orchestration bedarf, um die Ausführung von Geschäftsprozessen und RPA-Abläufen aufeinander abzustimmen. Dennoch werden in der Praxis  getrennte Systeme für \gls{rpa} und \gls{bpm} eingesetzt und auch organisatorisch sind die Themen innerhalb des Unternehmens getrennt \citep[S. 6ff]{Flechsig2022Umfrage}. Um eine tiefergreifende BPMS-RPA Integration im Unternehmen zu etablieren, stellt \citet{Flechsig2022Umfrage} eine Reihe von Anforderungen auf: Essenziell für eine Integration ist ein gewisse BPM-Reife (\say{BPM-Maturity}) des Unternehmens. Erst wenn Funktionen wie Prozessmodellierung, -einführung, -optimierung und -management erfolgreich im Unternehmen und der Unternehemenskultur etabliert wurden, lässt sich über eine tiegergehende BPMS-RPA Integration nachdenken. Darüberhinaus wird das generelle Mindset und die Offenheit dem Thema gegenüber betont. Oft sehen Unternehmen ein entweder-oder zwischen \gls{bpm} und \gls{rpa}
 
 
-
-
-- Definition
-- RPA is an umbrella term for tools that operate on
-the user interface of other computer systems in the way a human would do” [1].
-RPA is an upcoming
-- Use Cases
-- Harmon [20] indicated that 30% of the surveyed practitioners 
-would like to add some kind of RPA capabilities to their process modeling suite. 
--Probleme von RPA:
-Despite all beneﬁts, RPA has strong limitations: In order to identify and imple-
-ment an RPA process, extensive process knowledge is required. Existing work
-has shown that, if no such knowledge is available (e.g. no other systems for
-gathering it are in place), the beneﬁts of RPA are far less signiﬁcant, as much
-time and eﬀort has to be put into gaining that knowledge [5, 6]
-- - fehlende Infos über automation enactment(was soll automatisiert werden?)
-- Ausnahmebehandlungen
-- Automatisierung in die Organisation einbetten
-
-    \section{BPMNS-RPA}
+    Existing research suggests to solve these problems by combining RPA withbusiness process management (BPM). More speciﬁc, most works propose inte-grating RPA with BPM. RPA is considered more successful, or even only suc-cessful, when combined with BPM
+    Gartner sieht im Konzept der Hyperautomation - eine durch generative KI erweiterte, hochskalierbare RPA-Lösung zur vollständigen End-to-End Automatisierung von Geschäftsprozesse - eine mögliche Verbesserung von bestehenden RPA-Lösungen, konkrete Ergebnisse und Evaluationen stehen jedoch noch aus 
 - Vorschlag, beide Technologien zu verbinden
 - beide Technolgien haben Gemeinsamkeiten, beide bauen auf Prozesse auf, haben die gleichen Ziele
 - sind im Moment jedoch völlig getrennt: Though these technologies are very often used separately, the authors from business practice [14, 36] strongly suggest combining both to gain even more business value. In a case of the lack of resources and/or time to completely implement BPMS, RPA can
@@ -60,9 +46,16 @@ time and eﬀort has to be put into gaining that knowledge [5, 6]
 of abstraction, RPA processes can be considered activities of a parent business
 process.
 - kann Probleme von RPA lösen
-BPMNS-RPA kann eine Mögllichkeit sein.
+BPMNS-RPA kann eine Möglichkeit sein.
 \subsection{BPMN-RPA Lifecycle}
+- der in Kapitel 1 beschriebene Prozess lässt sich erweitern
+
 \chapter{Marktübersicht}
+-CAGR von BPM und RPA
+- Marktgröße angeben
+- Vendoren vorstellen
+- dokumente einfließen lassen
+- Fazit: noch keine tiefergreifende Integrationen
 \begin{comment}
 BPM market analysis
 The BPM market was valued at $16 billion in 2023. Additionally, the market is projected to exceed $58 billion by the end of 2036, exhibiting 11 percent CAGR during the forecasted period. Some of the growth propelling factors for the market are:
@@ -77,12 +70,26 @@ Furthermore, the market in the North America region is projected to reach almost
 - es wird untersucht, in wie fern die Anbieter Methoden beider Disziplinen vereinen.
 - untersucht werden folgende:
 \chapter{Fallstudie: BPMN Datenaustausch zwischen SAP Build Process Automation und SAP Signavio}
-
+    - es wird ein Feature vorgestellt, das aktiv evaluiert wird.
+    - reiht sich in den Bereich RPA-BPM ein (Interview angeben)
+    - RPA-BPM wird von SAP als strategisch wichtig angesehen
+    - 
     - Überleitung zum Hauptteil der Studienarbeit
+    - Thema: BPMN dateien durch native Integration von SAP Signavio zu SAP Build Process Automation transferieren
+    -SAP Signavio ist die BPMNS Lösung von SAP (daten: )
+    - SAP Build Process Automation ist die RPA Lösung von SAP (daten?)
+    - 
 \section{SAP Signavio}
 \section{SAP Build Process Automation}
 
 \section{Problem Statement}
+    - Kunden haben gleiche Probleme wie in Kapitel 1 angesprochen
+        - Prozesse und Prozessinformationen sind voneinander getrennt (hier Insights einfügen (3 Stück))
+    - auch organisatorisch sind COE RPA und COE BPMN getrennt voneinander
+    - jetziges Szenario: Prozess-Team entdeckt manuellen Prozess in Signavio Process Insights, dann muss es Automatisierungs-team kontaktieren, dann muss das Team den Prozess bekommen und nochmal modellieren
+    - das ist nicht gut, zu langsam, fehlende Kommunikation
+    - Kunde wünscht sich eine bessere Integration, mehr Automatisierung
+
     - hier auf die angeführten Probleme aus Kapitel 1 eingehen
     - Personas vorstellen
     - User Demand angeben
